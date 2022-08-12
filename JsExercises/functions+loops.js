@@ -106,11 +106,36 @@
 // }
 
 //EXERCISE 12
-// let num = 1
+// let num = 0
 // while (num < 20 ){
+//     if(num == 1){
+//         console.log(num += 1)
+//     } else if( num == 2){
+// console.log(num)
+//     } else if( num == 3){
+// console.log(num)
+//     }
 //    if(num %2!= 0 && num %3!= 0){
 //         console.log(num)
 //     }
 //     num ++
 // } 
+
+// let num = 2;
+// let primeNum = 0;
+// let num2 = 0;
+// while (num<=20) {
+//     primeNum = num - 1;
+//     while (primeNum>1){
+//         if (num%primeNum==0){
+//             num2++;
+//         }
+//         primeNum--;
+//     }
+//     if (num2==0){
+//         console.log(num);
+//     }
+//     num2 = 0;
+//     num++;
+// }
 
