@@ -24,17 +24,19 @@
 // }
 // console.log(maxOfThree( 2, 4, 2))
 
-//EXERCISE 3 (ASK FOR HELP)
+// EXERCISE 3 (ASK FOR HELP)
 // let vowels = ["A", "E", "I", "O", "U"]
-// function isCharAVowel(...vowels){
-//     if (isCharAVowel = vowels){
-//         return true;
-//     }
-//     else { 
-//         return false;
-//     }
+// function isCharAVowel(vowels){
+// switch(vowels){
+// case "A": return true;
+// case "E": return true;
+// case "I": return true;
+// case "O": return true;
+// case "U": return true;
+// default : return false
 // }
-// console.log(isCharAVowel("e"))
+// }
+// console.log(isCharAVowel("a"))
 
 
 //EXERCISE 4
@@ -44,7 +46,7 @@
 //     for (let i = 0; i < numbers.length; i++){
 // total += numbers[i]
 // }
-// console.log(total)
+// return total;
 //     }
 // console.log(sumArray(numbers))
 
@@ -84,21 +86,48 @@
 // console.log(reverseString("robot"))
 
 //EXERCISE 8
-strings = ["hello", "my", "name", "is", "George"]
 
-const longestStringInArray = function(strings){
-   let length = 0
-   let longest;
-   for (i = 0; i < strings.length; i++){ //incrementing i to check each value in the array
-    if (strings[i].length > length){ //checking if the length of the current index value (0 would equal hello) is longer then length
-    let length = strings[i].length; // if the if statement runs true change variable length to the length of the current string
-    longest = strings[i] // declare longest to be the longest string value
-     }
-     }
-    }
-    
-   
-console.log(longestStringInArray(strings))
+
+// const longestStringInArray = function(stringArray) {
+//  let size = 0
+// for (let i = 0; i < stringArray.length; i++){
+//   if (stringArray[i].length > size){
+//     size = stringArray[i].length
+//   } 
+ 
+// }
+// return size;
+// }
+
+// console.log(longestStringInArray(["hello", "my", "name", 'George', 'Fantastic']))
+
+//EXERCISE 9
+
+// function stringsLongerThan(arr, number){
+//   output = []
+//   for (let i = 0; i < arr.length; i++){
+// if(arr[i].length > number){
+// output.push(arr[i]);
+// }
+// }
+// return output
+// }
+// console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
+
+//BONUS EXERCISE
+
+// function addlist(...numbers){
+// let sum = 0
+// for (let i = 0; i<numbers.length; i++){
+//     sum += numbers[i];
+// }
+// return sum
+// }
+
+// console.log(addlist(1))
+// console.log(addlist(4, 6, 60))
+
+
 
 
 
