@@ -25,18 +25,17 @@
 // console.log(maxOfThree( 2, 4, 2))
 
 // EXERCISE 3 (ASK FOR HELP)
-// let vowels = ["A", "E", "I", "O", "U"]
-// function isCharAVowel(vowels){
-// switch(vowels){
-// case "A": return true;
-// case "E": return true;
-// case "I": return true;
-// case "O": return true;
-// case "U": return true;
-// default : return false
-// }
-// }
-// console.log(isCharAVowel("a"))
+function isCharAVowel(vowels){
+switch(vowels){
+case "A": return true;
+case "E": return true;
+case "I": return true;
+case "O": return true;
+case "U": return true;
+default : return false
+}
+}
+console.log(isCharAVowel("A"))
 
 
 //EXERCISE 4
