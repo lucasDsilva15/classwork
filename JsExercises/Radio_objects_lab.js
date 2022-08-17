@@ -1,6 +1,7 @@
 
 
-let radio = {
+let radio = 
+{
 stations: 
     [
         {
@@ -64,14 +65,20 @@ stations:
                     title: "Where'd the cowboys go?",
                     artist: "Cowboy Carl",
                 },
-
+                
             ],
         },
 
-    ],
-    randomStation(){
-       console.log(Math.floor(math.random()*stations))
-    }
-} 
+    ], 
+     chooseSong(){
+        let songPlaying = Math.floor(Math.random()*3) //chooses a random number 0-2
+        let radios = Math.floor(Math.random()*3)    //chooses a random number 0-2
+        let newSong = radio.stations[radios].songs[songPlaying] //newSong variable assigns the location with variables radioS and songPlaying as random numbers to search through the object   
+        let radios2 = radio.stations[radios]   
+    console.log("Now playing " + newSong.title + ' by ' + newSong.artist + ' on ' + radios2.name + ' radio. The one stop station for music') //("Now Playing:" + song.title + "by" + song.artist)
+},
+}
 
-console.log(radio)
+radio.chooseSong()
+
+
