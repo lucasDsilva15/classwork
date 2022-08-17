@@ -22,7 +22,8 @@ stations:
                     title: "Walk in the Park",
                     artist: "Jack Harlow",
                 },
-            ]
+            ],
+            genre: 'Rap'
         },
 
         {
@@ -44,7 +45,8 @@ stations:
                     artist: "Glaive",
                 },
                 
-            ]
+            ],
+            genre: 'alternative Indie',
         },
 
         {
@@ -67,6 +69,7 @@ stations:
                 },
                 
             ],
+            genre: 'Country',
         },
 
     ], 
@@ -74,8 +77,9 @@ stations:
         let songPlaying = Math.floor(Math.random()*3) //chooses a random number 0-2
         let radios = Math.floor(Math.random()*3)    //chooses a random number 0-2
         let newSong = radio.stations[radios].songs[songPlaying] //newSong variable assigns the location with variables radioS and songPlaying as random numbers to search through the object   
-        let radios2 = radio.stations[radios]   
-    console.log("Now playing " + newSong.title + ' by ' + newSong.artist + ' on ' + radios2.name + ' radio. The one stop station for music') //("Now Playing:" + song.title + "by" + song.artist)
+        let radios2 = radio.stations[radios]   // assigns what radio station the song is on
+        let genre2 = radio.stations[radios].genre // assigns which genre the station plays
+    console.log("Now playing " + newSong.title + ' by ' + newSong.artist + ' on ' + radios2.name + ' radio. The one stop station for ' + genre2 + ' music') //("Now Playing:" + song.title + "by" + song.artist)
 },
 }
 
