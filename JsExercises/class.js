@@ -49,7 +49,7 @@
 //     cureScurvy(){
 //         if (this.scurvy === 'yes'){
 //             if(this.lemons === 'yes'){
-                
+
 //                 console.log(this.name + ": Ah my scurvy is cured")
 //             } else if (this.lemons === 'no') {
 //                 console.log(this.name + ": Well guess im going to die soon matey")
@@ -221,34 +221,58 @@
 // chef2.cookFood()
 
 //Exercise 5
-// class BankAccount{
-//     constructor(ownerName, balance, accountNumber){
-//         this.ownerName = ownerName
-//         this.balance = balance
-//         this.accountNumber = accountNumber
-//     }
-//     deposit(){
-    
-//     }
-//     withdraw(){
+// class BankAccount {
 
+//     constructor(accname, balance) {
+//         this.accname = accname;
+//         this.balance = balance;
+//         this.acctNum = Math.floor(Math.random() * 1000);
 //     }
-// }   
-
-// class CheckingAccount extends BankAccount{
-//     constructor(ownerName, balance, accountNumber, overDraftEnabled){
-//         super(ownerName, balance, accountNumber)
-
+//     deposit(money) {
+//         this.balance += money
+//         console.log('You deposited: $' + money + ' your new balance is: $' + this.balance)
 //     }
-//     withdraw(){
-
+//     withdraw(money) {
+//         this.balance -= money
+//         console.log('You withdrew: $' + money + ' your new balance is: $' + this.balance)
 //     }
 // }
 
-// class SavingAccount extends BankAccount {
-//     withdraw(){ 
+// class CheckingAccount extends BankAccount {
 
+//     constructor(accname, balance, overdraftEnabled = true) {
+//         super(accname, balance, acctNum) // calls the constructor from the parent class (bank account)
+//         this.overdraftEnabled = overdraftEnabled
+//     }
+
+//     withdraw(amount) {
+//         if (amount > this.balance) {
+
+//             if (this.overdraftEnabled) {
+
+//                 let overdraftFee = 20
+//                 this.balance -= (amount + overdraftFee)
+//                 console.log('this transaction overdrafts your balance.')
+
+//             } else {
+
+//                 console.log('you cannot withdraw more then you have')
+//             }
+//         } else {
+
+//             this.balance -= amount
+//             console.log('You withdrew: $' + amount + ' your new balance is: $' + this.balance)
+//         }
 //     }
 // }
 
-// const account1 = new BankAccount ('John', 30000, 11111)
+// class SavingsAccount extends BankAccount {
+//     withdraw() {
+//         console.log('You can not withdraw from savings')
+//     }
+// }
+
+// const lucas = new BankAccount('Lucas', 1000000)
+// const lucasC = new CheckingAccount('Lucas', 1000000)
+// const lucasS = new SavingsAccount('Lucas', 1000000)
+
