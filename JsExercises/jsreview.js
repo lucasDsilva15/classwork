@@ -84,6 +84,7 @@
 
 // Review E
 
+
 //1.
 // let age = 15
 
@@ -97,7 +98,9 @@
 
 
 // SECTION 2 LOOPS
+
 // A The Basics
+
 
 //1. 
 // for (let i = 0; i <= 10; i++){
@@ -117,6 +120,7 @@
 
 //B. Get Even
 
+
 // 1. 
 // for (let i = 1; i <= 100; i++){
 //         console.log(i);
@@ -133,6 +137,7 @@
 
 
 //C. Give me Five
+
 
 //1
 // for (let i = 0; i <= 100; i++){
@@ -153,11 +158,71 @@
 
 
 //D. Savings Account
-let sum = 0
-for (i = 1; i <= 10; i++){
-    sum =+ i
-}
-console.log(sum)
+
+
+//1.
+// let sum = 0
+// for (i = 1; i <= 10; i++){
+//     sum += i
+// }
+// console.log(sum)
+
+//2.
+// let sum = 0
+// for (i = 1; i <= 100; i++){
+//     sum += i
+    
+// }
+// console.log(sum*2)
+
+
+//SECTION 3 ARRAYS AND CONTROL FLOW
+
+//A. Talk about it
+
+
+// 1. Elements
+
+// 2. Yes each item is assigned an index number that ORDERS the elements
+
+// 3. 
+
+
+//B. Easy Does It
+
+
+//1. 
+//let quotes = ["I love coding -Lucas", "Jade, Rixio, and Teo are the best teachers -Lucas", "Teo has the best backgrounds -Lucas"]
+
+
+//C. Accessing elements
+
+
+//1. 
+//randomThings[0]
+
+//2.
+// randomThings[2] = "world"
+
+//3.
+// console.log(randomThings[2])
+
+
+//D. Change Values
+
+
+// 1. ourClass[2]
+
+//2. ourClass[4] = "Octocat"
+
+//3. ourClass.push = "Cloud city"
+
+
+//E. Mix it Up
+const myArray = [5, 10, 500, 20]
+myArray.push("Aegon", "Cheese")
+console.log(myArray)
+
 
 
 
