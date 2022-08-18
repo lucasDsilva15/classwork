@@ -74,12 +74,13 @@ stations:
 
     ], 
      chooseSong(){
-        let songPlaying = Math.floor(Math.random()*3) //chooses a random number 0-2
-        let radios = Math.floor(Math.random()*3)    //chooses a random number 0-2
+        let radios = Math.floor(Math.random()*radio.stations.length) //chooses a random number using the length of the stations array
+        let songPlaying = Math.floor(Math.random()*radio.stations[radios].songs.length)    //chooses a random number in the station we chose in radios variable inside the songs array
         let newSong = radio.stations[radios].songs[songPlaying] //newSong variable assigns the location with variables radioS and songPlaying as random numbers to search through the object   
         let radios2 = radio.stations[radios]   // assigns what radio station the song is on
         let genre2 = radio.stations[radios].genre // assigns which genre the station plays
-    console.log("Now playing " + newSong.title + ' by ' + newSong.artist + ' on ' + radios2.name + ' radio. The one stop station for ' + genre2 + ' music') //("Now Playing:" + song.title + "by" + song.artist)
+    console.log("Now playing " + newSong.title + ' by ' + newSong.artist + ' on ' + radios2.name + ' radio. The one stop station for ' + genre2 + ' music'
+    ) //("Now Playing:" + song.title + "by" + song.artist)
 },
 }
 
