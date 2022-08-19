@@ -215,16 +215,53 @@
 
 //2. ourClass[4] = "Octocat"
 
-//3. ourClass.push = "Cloud city"
+//3. ourClass.push("Cloud city")
 
 
 //E. Mix it Up
 const myArray = [5, 10, 500, 20]
-myArray.push("Aegon", "Cheese")
-console.log(myArray)
+//1.
+// myArray.push("Aegon", "Cheese")
+
+//2.
+// myArray.shift()
+
+//3.
+// myArray.unshift("Bob Marley")
+
+//4.
+// myArray.splice(4, 1)
+
+//5.
+// myArray.reverse()
+// Yes we mutated the area in every step by adding new elements or changing positions of elements. Mutating means to change the 
+// original positions of a desired array that has been delcared. the reverse method will not return anything until it is 
+// printed in the terminal using console.log() however the array is already mutated once the code is typed even if we dont see it.
 
 
+//F.Biggie Smalls
 
+
+//1. & 2.
+// let Biggie = 4
+//     if (Biggie < 100){
+//         console.log("Little Number")
+//     } else {
+//         console.log("Big Number")
+//     }
+
+
+//G. Monkey in the Middle
+
+//1. & 2. & 3.
+// let num = 7
+//     if (num < 5){
+//         console.log('Little Number')
+//     } else if (num > 10){
+//         console.log('Big Number')
+//     } else {
+//         console.log('Monkey')
+//     }
 
 
 

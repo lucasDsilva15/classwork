@@ -220,7 +220,7 @@
 // console.log()
 // chef2.cookFood()
 
-//Exercise 5
+// Exercise 5
 // class BankAccount {
 
 //     constructor(accname, balance) {
