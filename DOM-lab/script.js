@@ -166,20 +166,7 @@ function callBack2(evt){
 mainEl.innerHTML = `<h1>${evt.target.textContent.toUpperCase()}</h1>` 
 }
 
-
-
-
- 
-    
-
-
+  
 topMenuEl.addEventListener('click', callBack)
 
 subMenuEl.addEventListener('click', callBack2)
-
-
-
-
-
-
-
