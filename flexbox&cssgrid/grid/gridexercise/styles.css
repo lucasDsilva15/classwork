@@ -1,5 +1,5 @@
 body {
-    background: lightslategray;
+    background: black;
 }
 
 .container {
@@ -19,32 +19,39 @@ body {
 .one {
     grid-row: 1;
     grid-column: 1;
+    color:white;
 }
 
  .two {
     background: red;
-    grid-area: 1/2/3/4
+    grid-area: 1/2/3/4;
+    color: red;
 }
 
 .three {
-    background: white
+    background: white;
+    color: white
 }
 
 .four {
     background-color: blue;
-    grid-row: 3/5
+    grid-row: 3/5;
+    color: blue
 }
 
 .five {
     background: white;
-    grid-row: span 2
+    grid-row: span 2;
+    color: white;
 }
 
 .six {
-    background: white
+    background: white;
+    color: white;
 }
 
 .seven {
     background-color: yellow;
     grid-column: 3;
+    color: yellow
 } 
