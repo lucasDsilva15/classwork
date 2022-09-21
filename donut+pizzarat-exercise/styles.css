@@ -1,0 +1,44 @@
+body{
+    margin: 0px
+}
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 40px solid green */
+}
+.header{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid orange */
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    /* border: 5px solid blue */
+}
+.resultscontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vh;
+    background-color: gray;
+    color: darkgoldenrod;
+    border: 5px solid darkgoldenrod
+}
+.btn{
+    border-radius: 5px;
+    background-color: lightblue;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: yellow;
+}

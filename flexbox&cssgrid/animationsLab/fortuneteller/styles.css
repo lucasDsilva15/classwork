@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+.maincontainer{
+    height:100%;
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.container3{
+    position: absolute;
+    z-index: -1000;
+    font-size: 40px;
+}
+
+.theonecontainer{
+    height: 400px;
+    width:400px;
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; 
+    transition: transform 1s ease-in-out;
+    
+}
+
+.container1{
+    
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+}
+
+.container2{
+    
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+}
+
+.sect1{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    transition: transform 1s ease-in-out;
+    transform-origin: top left;
+    
+}
+
+.sect2{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    transition: transform 1s ease-in-out;
+    transform-origin: bottom left;
+    
+}
+
+.sect3{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    transition: transform 1s ease-in-out;
+    transform-origin: top right;
+}
+
+.sect4{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    transition: transform 1s ease-in-out;
+    transform-origin: bottom right;
+}
+
+
+.theonecontainer:hover .container1 .sect1{
+    transform: rotate(90deg);
+}
+.theonecontainer:hover .container1 .sect2{
+    transform: rotate(-90deg);
+}
+.theonecontainer:hover .container2 .sect3{
+    transform: rotate(-90deg)
+}
+.theonecontainer:hover .container2 .sect4{ 
+    transform: rotate(90deg)
+}
+

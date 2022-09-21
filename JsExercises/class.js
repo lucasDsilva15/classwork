@@ -36,13 +36,13 @@
 
 // Exercise 2
 
-// class Pirate {
-//     constructor(name, age, scurvy, lemons) {
-//         this.name = name
-//         this.age = age
-//         this.scurvy = scurvy
-//         this.lemons = lemons
-//     }
+class Pirate {
+    constructor(name, age, scurvy, lemons) {
+        this.name = name
+        this.age = age
+        this.scurvy = scurvy
+        this.lemons = lemons
+    }
 //     yoho(){
 //         console.log(this.name + ': YO HO')
 //     }
